@@ -180,7 +180,10 @@ class MPDEnsemble(SingleAgentPlanner):
             diffusion_model.eval()
             model = diffusion_model
             freeze_torch_model_params(model)
-            model = torch.compile(model)
+            import sys
+
+            if sys.platform != "win32":
+                model = torch.compile(model)
             model.warmup(horizon=n_support_points, device=device)
 
             self.models[j] = model
