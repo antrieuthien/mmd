@@ -1,0 +1,32 @@
+# Downloaded/generated datasets and models (see README "Obtaining Sample Datasets and Models")
+data_trajectories/
+data_trained_models/
+data_trained_models_small/
+*.tar.xz
+
+# Data generation output (see README "Generating a Dataset")
+logs/
+
+# Inference output (see README "Running Inference")
+results/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.egg
+
+# Editable install artifacts
+build/
+dist/
+
+# Conda / env
+.conda/
+*.env
+
+# Editor/OS junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
