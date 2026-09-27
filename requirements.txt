@@ -26,7 +26,7 @@ gitpython
 scikit-video
 opencv-python~=4.10.0.84
 moviepy
-hydra~=2.5
+hydra-core
 urdfpy~=0.0.22
 gdown
 einops
